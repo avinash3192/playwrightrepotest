@@ -10,4 +10,5 @@ test('Sauce Demo login page is displayed', async ({ page }) => {
   await expect(page.getByRole('textbox', { name: 'Username' })).toBeVisible();
   await expect(page.getByRole('textbox', { name: 'Password' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Login' })).toBeVisible();
+  await expect(page.getByText('Swag Labs').first()).toBeVisible();
 });
